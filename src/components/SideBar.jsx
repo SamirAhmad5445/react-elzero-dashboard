@@ -6,7 +6,7 @@ const SideBar = ({ tabs, selected, onSelect }) => {
       <h1 className="sidebar-title text-xs md:text-xl font-bold text-center">
         Elzero
       </h1>
-      <div className="grid gap-1 text-sm">
+      <div role="tablist" className="grid gap-1 text-sm">
         {tabs.map((tab, index) => (
           <Tab
             key={index}
