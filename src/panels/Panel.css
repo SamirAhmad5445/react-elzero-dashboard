@@ -1,0 +1,18 @@
+.panel {
+  --max-col-width: 28.125rem;
+
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--max-col-width), 1fr));
+  gap: 1.25rem;
+}
+
+.panel-title {
+  grid-column: 1 / -1;
+
+  @apply text-[2rem] font-bold 
+    mb-10 relative 
+    after:absolute after:-bottom-2.5 after:left-0 
+    after:w-[120px] after:h-[3px] 
+    after:bg-gradient-to-r from-black from-[33%] to-white to-[33%];
+}
